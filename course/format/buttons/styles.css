@@ -1,0 +1,345 @@
+/*
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+
+/**
+ * format_buttons_renderer
+ *
+ * @package    format_buttons
+ * @author     Rodrigo Brandão <https://www.linkedin.com/in/brandaorodrigo>
+ * @copyright  2019 Rodrigo Brandão <brandrod@gmail.com>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+.course-content ul.buttons {
+    margin: 0;
+    list-style: none;
+}
+
+.course-content ul.buttons li.section .content {
+    margin: 0;
+}
+
+.course-content ul.buttons li.section .left,
+.course-content ul.buttons li.section .right {
+    width: 40px;
+    padding: 0 6px;
+}
+
+.course-content ul.buttons li.section .left {
+    padding-top: 22px;
+    text-align: right;
+}
+
+.jsenabled .course-content ul.buttons li.section .left,
+.jsenabled .course-content ul.buttons li.section .right {
+    width: auto;
+}
+
+.course-content ul.buttons li.section .left .section-handle img.icon {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.course-content ul.buttons li.section .section_action_menu .textmenu,
+.course-content ul.buttons li.section .section_action_menu .menu-action-text {
+    white-space: nowrap;
+}
+
+.course-content ul.buttons li.section.main:not(#section-0) {
+    background: none;
+    list-style: none;
+    display: none;
+    border: 0 !important;
+}
+
+#buttonsectioncontainer {
+    display: none;
+    margin: 20px auto;
+}
+
+#buttonsectioncontainer .buttonsection {
+    background: #dee3e8;
+    color: #7a8188;
+    display: inline-block;
+    text-align: center;
+    width: 52px;
+    line-height: 52px;
+    height: 52px;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0;
+    font-weight: bold;
+    margin: 0 5px 10px 5px;
+    vertical-align: top;
+}
+
+#buttonsectioncontainer.circle .buttonsection {
+    border-radius: 100%;
+}
+
+#buttonsectioncontainer .buttonsection:hover {
+    background: #bac1c5;
+    color: #fff;
+}
+
+#buttonsectioncontainer .buttonsection.sectionhidden {
+    width: 53px;
+    height: 53px;
+    line-height: 50px;
+    border: 2px solid;
+    background: none;
+    cursor: default;
+    color: #b7bdc3;
+    border-color: #d3d9df;
+}
+
+#buttonsectioncontainer .divisorsection {
+    display: inline-block;
+    padding: 0;
+    overflow-y: hidden;
+    height: 52px;
+    margin: 0 4px 10px 25px;
+}
+
+#buttonsectioncontainer .divisortext {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    overflow-y: hidden;
+    height: 52px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* colors */
+#buttonsectioncontainer .buttonsection.current {
+    background: #115898;
+    color: #fff;
+}
+
+#buttonsectioncontainer .buttonsection.sectionvisible {
+    background: #1177d1;
+    color: #fff;
+    border-color: #1177d1;
+}
+
+#buttonsectioncontainer .divisorsection.inlinebuttonsections {
+    display: inline;
+}
+
+#buttonsectioncontainer .divisorsection.inlinebuttonsections::before {
+    content: "\A";
+    white-space: pre;
+}
+
+/* editing */
+.editing .course-content ul.buttons li.section.main:not(#section-0) {
+    display: block;
+    border-bottom: 1px dotted #dee2e6 !important;
+}
+
+
+
+/* Rone Santos - Copiar daqui até o final  */
+#buttonsectioncontainer.circle .buttonsection.icon {
+    border-radius: unset;
+}
+
+#buttonsectioncontainer .buttonsection.icon{
+    color: rgba(0,0,0,.6);
+    background-color: unset;
+    width: 65px;
+    height: unset;
+    padding: 5px;
+    font-weight: 700;
+    margin: 0 10px 10px 10px;
+}
+
+#buttonsectioncontainer .buttonsection.icon.sectionvisible {
+    background-color: #e4e4e4;
+    padding: 5px;
+    border-radius: 4px;
+    bottom: 6px;
+}
+
+#buttonsectioncontainer .buttonsection.icon:hover {
+    background-color: unset;
+}
+
+#buttonsectioncontainer .buttonsection.icon.sectionvisible:hover {
+    background-color: #e4e4e4;
+}
+
+#buttonsectioncontainer .buttonsection.icon .tip{
+    display: none;
+    font-size: 12px;
+}
+
+#buttonsectioncontainer .buttonsection.icon .section-title-under{
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color:  rgba(0,0,0,.8);
+    margin-top: 5px;
+    margin-left: -3px;
+    margin-right: -3px;
+}
+
+#buttonsectioncontainer .buttonsection.icon .buttonsection-icon{
+    height: 65px;
+    width: 65px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+#buttonsectioncontainer .buttonsection.icon .buttonsection-icon img{
+    height :65px;
+    border-radius: 100%;
+}
+
+#buttonsectioncontainer .buttonsection.icon:hover .buttonsection-icon {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#icon-planodeensino{
+    background-color: #990909;
+}
+#icon-webconferencia{
+    background-color: #ff2b14;
+}
+#icon-materialdidatico{
+    background-color: #5213a1;
+}
+#icon-atividadeavaliativa{
+    background-color: #844957;
+}
+#icon-atividadefixacao{
+    background-color: #3a6278;
+}
+#icon-batepapo{
+    background-color: #067611;
+}
+#icon-multimidia{
+    background-color: #c50016;
+}
+#icon-recados{
+    background-color: #9eae00;
+}
+#icon-cronograma{
+    background-color: #067611;
+}
+#icon-discussao{
+    background-color: #494949;
+}
+#icon-certificado{
+    background-color: #8621ff;
+}
+#icon-forum{
+    background-color: #00a526;
+}
+#icon-chat{
+    background-color: #8621ff;
+}
+#icon-gabarito{
+    background-color: #8621ff;
+}
+
+
+.buttons .fac-ead-teachers-title {
+    width: 100%;
+    margin-top: 0;
+}
+.buttons .fac-ead-teachers {
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+}
+.buttons .fac-ead-teachers button.accordion {
+    display: block !important;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+}
+.buttons .fac-ead-teachers .panel {
+    border: 0;
+    box-shadow: unset;
+    width: 100%;    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.buttons .fac-ead-teacher-course {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px #999;
+    background-image: url([[pix:theme|bg/bg-claro4]]);
+    background-size: cover;
+}
+.buttons .fac-ead-teachers-title {
+    width: 100%;
+    margin-top: 0;
+}
+.buttons .fac-ead-teacher-img-content{
+    display: flex;
+    flex-direction: row;
+
+}
+.buttons .fac-ead-teacher-img-content img{
+    border-radius: 50%;
+}
+.buttons .fac-ead_teachers_image{
+    width: 70px;
+    height: 70px;
+}
+.buttons .fac-ead-teacher-info{
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.buttons .fac-ead-teacher-fullname{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+.buttons .fac-ead-teacher-email address{
+    margin: 0;
+    color: #990006;
+}
+
+@media only screen and (max-width: 767px){
+    .buttons .fac-ead-teacher-course {
+        width: unset;
+    }
+    .buttons .fac-ead_teachers_image {
+        width: 50px;
+        height: 50px;
+    }
+}
+/* até aqui */

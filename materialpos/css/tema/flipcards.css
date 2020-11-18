@@ -1,0 +1,128 @@
+
+/*
+* CSS3 Flip
+*/	
+.doisflipcards {
+	width:48%;
+	margin:30px auto; 
+	float:none; 
+	background:#424242 url(../../img/bg-padrao.png); 
+	height:auto; 
+	padding:15px;
+}
+.tresflipcards {
+	width:72%;
+	margin:30px auto; 
+	float:none; 
+	background:#424242 url(../../img/bg-padrao.png); 
+	height:auto; 
+	padding:15px;
+}	
+.quatroflipcards {
+	width:95%;
+	margin:30px auto; 
+	float:none; 
+	background:#424242 url(../../img/bg-padrao.png); 
+	height:auto; 
+	padding:15px;
+}	
+.flipcardazul,
+.flipcardvermelho,
+.flipcardverde,
+.flipcardamarelo {		 
+	margin:10px;
+	background-color:#FFF;
+}
+.flipcardazul {
+	border:6px solid #46b3d2;
+}
+.flipcardvermelho {
+	border:6px solid #d53044;
+}
+.flipcardverde {
+	border:6px solid #92b45d;
+}	
+.flipcardamarelo {
+	border:6px solid #f2af32;
+}			
+.thumb.flip {
+	-webkit-perspective:800px;		
+	-moz-perspective:800px;
+	-ms-perspective:800px;		   		
+	-o-perspective:800px;
+	perspective:800px;
+}
+.thumb.flip .thumb-wrapper {
+	-webkit-transition: -webkit-transform 1s;
+	-moz-transition: -moz-transform 1s;
+	-ms-transition: -moz-transform 1s;
+	-o-transition: -moz-transform 1s;
+	transition: -moz-transform 1s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;			
+	-ms-transform-style: preserve-3d;			
+	-o-transform-style: preserve-3d;			
+	transform-style: preserve-3d;			
+}
+.thumb.flip .thumb-detail {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);
+	-ms-transform: rotateY(-180deg);
+	-o-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);			   			
+}
+.thumb.flip img,
+.thumb.flip .thumb-detail {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.thumb.flip .flipIt {
+	-webkit-transform: rotateY(-180deg);
+	-moz-transform: rotateY(-180deg);			
+	-ms-transform: rotateY(-180deg);			
+	-o-transform: rotateY(-180deg);			
+	transform: rotateY(-180deg);			
+}
+.hero-unit {
+	padding: 60px;
+	margin-bottom: 30px;
+	font-size: 18px;
+	font-weight: 200;
+	line-height: 30px;
+	color: inherit;
+	background-color: #eeeeee;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.hero-unit h1 {
+	margin-bottom: 0;
+	font-size: 60px;
+	line-height: 1;
+	letter-spacing: -1px;
+	color: inherit;
+}
+.hero-unit li {
+ 	line-height: 30px;
+}
+.pull-right {
+ 	float: right;
+}
+.pull-left {
+ 	float: left;
+}
+.hide {
+ 	display: none;
+}
+.show {
+ 	display: block;
+}
+.invisible {
+ 	visibility: hidden;
+}
+.affix {
+ 	position: fixed;
+}

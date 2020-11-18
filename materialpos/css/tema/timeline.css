@@ -1,0 +1,150 @@
+
+ /* linha do tempo */
+#dates a {		
+ 	font-weight:normal;	 
+	text-decoration:none;
+	color:#f2af32;
+	font-family: 'daxcompact-lightlight';	
+	padding:10px;	
+}
+#timeline {
+	width: 100%;
+	min-height: 100px;
+	overflow: hidden;		
+	margin: 0px auto;
+	margin-top:10px;
+	position: relative;
+	background:#414141 url('../../img/dot.png') left 52px repeat-x;	
+	text-align:left;
+}
+#dates {
+	width: 800px;
+	height: 52px;
+	overflow: hidden;
+}
+#dates li {
+	list-style: none;
+	float: left;
+	width: 180px;
+	height: 50px;
+	font-size: 24px;
+	text-align: center;
+	background: url('../../img/biggerdot.png') center bottom no-repeat;
+}
+#dates a {
+	line-height: 38px;
+	padding-bottom: 10px;
+}
+#dates .selected {
+    font-size: 34px;
+	color:#92b45d;
+}
+#issues {
+	width: 750px;
+	min-height: 100px;
+	overflow: hidden;background:#333 url(../../img/bg-padrao.png);
+	color:#FFF;
+}	
+#issues li {
+	width: 830px;
+	min-height: 100px;
+	list-style: none;
+	float: left;
+	margin-top:20px;
+}
+#issues li .texto {
+	float:left;
+	width:50%;
+	padding:0px;
+	margin-top:20px;
+	text-align:left		
+}
+#issues li .titulo-oculto{
+	display:none;
+	text-align:left;
+	margin:0px;
+}	
+#issues li.selected img {
+	-webkit-transform: scale(1.0,1.0);
+	-moz-transform: scale(1.0,1.0);
+    -o-transform: scale(1.0,1.0);
+    -ms-transform: scale(1.0,1.0);
+    transform: scale(1.0,1.0);
+}
+#issues li img {
+	float: left;
+	margin: 0px 30px 10px 30px;
+	background: transparent;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+	zoom: 1;
+	-webkit-transition: all 2s ease-in-out;
+	-moz-transition: all 2s ease-in-out;
+	-o-transition: all 2s ease-in-out;
+	-ms-transition: all 2s ease-in-out; 
+	transition: all 2s ease-in-out;
+	-webkit-transform: scale(0.7,0.7);
+	-moz-transform: scale(0.7,0.7);
+    -o-transform: scale(0.7,0.7);
+    -ms-transform: scale(0.7,0.7);
+    transform: scale(0.7,0.7);
+}
+#issues li h1 {
+	color: #8cc43f;
+	font-size: 48px;
+	margin: 20px 0;
+	border:none;
+}
+#issues li img{
+	float:none;
+	margin:0 auto
+}
+#issues li p {
+	margin-right:50px;							
+}
+#grad_left,
+#grad_right {
+	width: 100px;
+	height: 400px;
+	position: absolute;
+	top: 0;
+}
+#grad_left {
+    left: 0;
+    background: url('../../img/grad_left.png') repeat-y;
+}
+#grad_right {
+    right: 0;
+    background: url('../../img/grad_right.png') repeat-y;
+}
+		
+#next,
+#prev {
+	position: absolute;
+	top: 0;
+	font-size: 70px;
+	top: 170px;
+	width: 22px;
+	height: 38px;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#next:hover,
+#prev:hover {
+	background-position: 0 -76px;
+}
+#next {
+	right: 0;
+	background-image: url('../../img/next.png');
+}
+#prev {
+	left: 0;
+	background-image: url('../../img/prev.png');
+}
+#next.disabled,
+#prev.disabled {
+	opacity: 0.2;
+}	
+ 

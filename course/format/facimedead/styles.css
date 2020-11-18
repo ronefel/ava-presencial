@@ -1,0 +1,485 @@
+.course-content ul.facimedead {
+    margin: 0;
+    list-style: none;
+}
+
+.course-content ul.facimedead li.section .content {
+    margin: 0 0px;
+}
+
+.course-content ul.facimedead li.section .left,
+.course-content ul.facimedead li.section .right {
+    width: 40px;
+    padding: 0 6px;
+}
+
+.course-content ul.facimedead li.section .left {
+    padding-top: 22px;
+    text-align: right;
+}
+
+.jsenabled .course-content ul.facimedead li.section .left,
+.jsenabled .course-content ul.facimedead li.section .right {
+    width: auto;
+}
+
+.course-content ul.facimedead li.section .left .section-handle img.icon {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.course-content ul.facimedead li.section .section_action_menu .textmenu,
+.course-content ul.facimedead li.section .section_action_menu .menu-action-text {
+    white-space: nowrap;
+}
+
+.facimedead .fac-ead-teachers-title {
+    width: 100%;
+    margin-top: 0;
+}
+
+.facimedead .fac-ead-teachers {
+    width: 100%;
+    display: flex;
+    overflow-y: auto;
+    flex-flow: wrap;
+    margin-bottom: 20px;
+}
+
+.facimedead .fac-ead-teacher-course {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 0px #999;
+    background-image: url([[pix:theme|bg/bg-claro4]]);
+    background-size: cover;
+}
+@media only screen and (max-width: 767px){
+    .facimedead .fac-ead-teacher-course {
+        width: unset;
+    }
+}
+.facimedead .fac-ead-labels{
+    flex-basis: 100%;
+    margin: 2em 0;
+}
+
+.facimedead .content h3.sectionname.notfirst.active{
+    background-color: [[setting:maincolor]];
+    color: white;
+}
+
+li.section.current h3.sectionname.notfirst{
+    background-color: rgba(153, 0, 6, 0.58) !important;
+    color: white;
+}
+
+.fac-section-panel{
+    padding: 0 0.1em 2em 2em;
+    background-color: inherit;
+    display: none;
+    height: inherit !important;
+    /*overflow: hidden;*/
+    border: 1px solid #990006;
+}
+
+.fac-section-panel .module-list:not(.editing) ul.section.img-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+.fac-section-panel .module-list ul .facimedead_subsectionfull{
+    flex-basis: 33%;
+    width: 100%;
+}
+.sectionname{
+    transition: 0.4s;
+    cursor: pointer;
+}
+.facimedead .content h3.sectionname{
+    border: none;
+    padding:1em;
+    font-size: 1.2em;
+    background-color: inherit;
+    margin: 0;
+    cursor: pointer;
+
+
+}
+.content h3.sectionname span{
+    padding: 0 .3em;
+    font-weight: bold;
+}
+.facimedead .sectionname.active span{
+    font-weight: bold;
+}
+h3.sectionname .fa{
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+
+    /*font-size: 1.5em;*/
+}
+h3.sectionname.active .fa{
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.subsection-icon {
+    height: 35px;
+    min-width: 35px;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #3685ec;
+    border-radius: 18px;
+    line-height: 35px;
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.facimedead > li:not(#section-0) .subsection:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+.fac-section-panel.active{
+    display: block;
+    animation: fac-show ease-in .5s;
+}
+.subsection{
+    cursor: pointer;
+}
+.current .sectionname.notfirst i{
+    color: #990006;
+}
+.fac-sub-section-icon{
+    font-size: 30px;
+    width: 30px;
+}
+
+.fac-module-title{
+    display: flex;
+    align-items: center;
+}
+.fac-module-title span{
+    padding-left: .5em;
+}
+
+.subsections{
+    display: flex;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.subsection-content{
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.subsections .subsection{
+    width: 30%;
+    display: flex;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+@media only screen and (max-width: 1040px) {
+    .subsections .subsection{
+        width: 45%;
+        display: flex;
+        margin-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .subsections .subsection{
+        width: 100%;
+    }
+    .subsection-icon{
+        width: 35px;
+    }
+    .fac-firstsection-content.notediting{
+        flex-direction: column;
+    }
+    .facimedead .fac-ead-teachers{
+        order: -1;
+    }
+    .facimedead .fac-ead_teachers_image {
+        width: 50px;
+        height: 50px;
+    }
+    .fac-section-panel{
+        padding: 0 1em 2em 1em;
+    }
+    .fac-section-panel .module-list:not(.editing) ul{
+        flex-direction: column;
+    }
+    #section-0 .content>h3.sectionname {
+        font-size: 1.2em !important;
+    }
+
+    .facimedead .section.main.clearfix>div.content {
+        box-shadow: #990006 2px 6px !important;
+    }
+
+    .fac-ead-modules-container{
+        flex-direction: column !important;
+    }
+}
+
+.fac-firstsection-content.notediting{
+    display:flex;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+.facimedead .fac-ead-teacher-img-content{
+    display: flex;
+    flex-direction: row;
+
+}
+.facimedead .fac-ead-teacher-info{
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.facimedead .fac-ead-teacher-fullname{
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-transform: capitalize;
+}
+.facimedead .fac-ead-teacher-email address{
+    margin: 0;
+    color: #990006;
+}
+.facimedead .fac-ead-teacher-img-content img{
+    border-radius: 50%;
+}
+div.info-prof{
+    display: none;
+}
+div.fac_teachers_labels div.info-prof{
+    display: block;
+    margin-top: 1em;
+}
+div.editing div.info-prof{
+    display: block;
+}
+
+.editor_atto div.info-prof{
+    display: block;
+}
+
+li.fac-ead-module {
+    flex-basis: 25%;
+}
+
+.fac-ead-modules-container{
+    list-style: none !important;
+    display: flex;
+
+    width: 100%;
+    margin: 0;
+    flex-basis: 100%;
+    flex-flow: wrap;
+}
+.fac-ead-module a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 5px 0;
+
+}
+.fac-ead-module a:hover fac-ead-module-title {
+    color: #888;
+}
+.fac-ead-module-icon {
+    width: 50px;
+}
+
+.fac-ead-module-icon img{
+    background-color: [[setting:maincolor]];
+    border-radius:8px;
+}
+.fac-ead-module-title {
+    margin: 0;
+    padding-left: 2%;
+    font-size: 1.2em;
+    color: #333;
+}
+/* .fac-ead-module a:hover .fac-ead-module-title{
+    color: #990006;
+} */
+
+div.module-list{
+    margin-top: 1.5em;
+}
+.facimedead .fac-ead_teachers_image{
+    width: 70px;
+    height: 70px;
+}
+.facimedead .section.main{
+    border-top: 1px solid #e2e2e2 !important;
+    background: inherit;
+    padding: 0 !important;
+}
+.facimedead_subsectionfull > li{
+    cursor: pointer;}
+.facimedead_subsectionfull > li:hover{
+    cursor: pointer;}
+.facimedead_subsectionfull h3{
+    font-size: 1em;
+    margin: 0;
+    line-height: normal;
+    padding: 0.4em 0;
+    font-weight: normal !important;
+    /* background-color: #efefef; */
+}
+.facimedead_subsectionfull .facimedead_subsection{
+    display: none;
+    padding: 0 1em;
+}
+.facimedead_subsectionfull h3.active{
+    background-color: aliceblue;
+    /* color: #990006; */
+    font-weight: bold !important;
+}
+.facimedead_subsectionfull .fa{
+    padding-right: .4em;
+}
+.facimedead_subsectionfull .active .fa.fa-folder-o:before{
+    content: '\f115';
+}
+.fac_labels_container{
+    list-style: none !important;
+    width: 100%;
+    margin: 0;
+}
+
+.fac_labels_container .fac_label{
+    font-size: 1em;
+    line-height: normal;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 3px;
+    position: relative;
+}
+.fac_labels_container .fac_label .fac_icon_close{
+    cursor: pointer ;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: rgba(0,0,0,.1);
+    position: absolute;
+    top: -0.2em;
+    right: .2em;
+}
+
+.fac_editing{
+    text-align: end;
+}
+
+.facimedead .section.main.clearfix > div.content{
+    border: 1px solid [[setting:maincolor]];
+    box-shadow: [[setting:maincolor]] 6px 6px;
+}
+
+.facimedead li.section.current h3.sectionname.notfirst::after {
+    content: ' (Semana atual)'
+}
+
+.facimedead li.section.current h3.sectionname.notfirst.active a{
+    color: white !important;
+}
+
+.facimedead .content h3.sectionname.active a {
+    color: white !important;
+}
+
+.facimedead .inplaceeditable .quickediticon img {
+     opacity: 1 !important;
+}
+
+.fac_tag_content{
+    margin-top: 2em;
+}
+
+.fac-ead-module:hover {
+    background-color: #dcefff;
+}
+
+.fac-module-title:hover {
+    background-color: aliceblue;
+}
+
+.img{
+    width: 100%;
+    align-self: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 760px){
+    #region-main h2.sectionname.teachers_title {
+        font-size: 1.5em;
+        padding: 5px 20px;
+        line-height: initial;
+    }
+}
+
+.panel {
+    
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+button.btn-pro-accordion{
+    width: 90%;
+    padding: 0;
+    font-size: 11px;
+    color: #333 !important;
+    background-color: whitesmoke !important;
+}
+
+button.btn-pro-accordion.active{
+    color: white !important;
+    background-color: [[setting:maincolor]] !important;
+}
+
+button.btn-pro-accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.active.btn-pro-accordion:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+.facimedead .fac-ead-teachers button.accordion {
+    display: block !important;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    width: 100%;
+}
+.facimedead .fac-ead-teachers .panel {
+    border: 0;
+    box-shadow: unset;
+    width: 100%;    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}

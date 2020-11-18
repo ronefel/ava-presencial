@@ -1,0 +1,80 @@
+
+/* slider responsivo simples */
+.slidewrap {
+	margin-top:20px;		
+}	
+.slider .slide img {
+	width:100%;				
+}
+.imagemlado .slide img {
+	width:50%;		
+	float:left;
+	padding-right:20px;							
+}		
+.imagemfixalado .slide p,
+.imagemfixalado .slide h1,
+.imagemfixalado .slide h2,
+.imagemfixalado .slide h3 {
+	margin-right:400px;
+	margin-left:40px;			
+}	
+.slidewrap ul {
+	margin: 0; padding: 0; list-style: none;
+}
+.carousel-tabs {
+	clear: both;
+}
+.carousel-active-tab {
+	color: red;
+}	
+.carousel-disabled,
+.mr-rotato-disabled {
+	color: #aaa;
+}
+.slidewrap .carousel-tabs {
+	padding: 0;
+	padding: 1em 0;
+	margin:0px;
+	clear: both;
+	text-align:center;
+	background:#3a3a3a;
+}
+.slidewrap .carousel-tabs li {
+    display: inline-block; 
+    padding: 0 2px;
+	
+}
+.slidewrap .carousel-tabs img {
+	width:100%;		
+}
+.slidewrap .carousel-tabs a {
+    background: #ddd;
+    display: inline-block;
+    height: 40px;
+    text-indent: -9999px;
+    width: 40px;
+    border-radius: 20px;
+	margin-left:3px;
+	margin-right:3px;
+}
+.ie .slidewrap .carousel-tabs li,
+.ie .slidewrap .carousel-tabs a { 
+	display: block;
+	float: left;
+}
+.slidewrap .carousel-tabs .carousel-active-tab a {
+	background: #f2af32;
+}
+.slidewrap{
+	background:#444444 url(../../img/bg-padrao.png);
+	color:#FFF;
+	margin-bottom:20px;
+}
+.slidewrap h1 {
+	margin:10px 20px;
+	font-size:22px;
+	line-height:22px;				
+}
+.events {
+	font: normal 11px/1.4 arial, helvetica, sans-serif;
+}

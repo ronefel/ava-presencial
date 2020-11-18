@@ -1,0 +1,46 @@
+<div class="fac-ead-teachers">
+  {{#manyTeachers}}
+  <button id="accordion-teachers" class="btn-pro-accordion accordion">Ver Responsáveis</button>
+  <div class="panel">
+  {{/manyTeachers}}
+    {{#teachers}}
+      <div class="fac-ead-teacher-course">
+        <h5 class='fac-ead-teachers-title'>{{role}}</h5>
+        <div class="fac-ead-teacher-img-content">
+          {{{HTMLpicture}}}
+          <div class="fac-ead-teacher-info">
+            <p class="fac-ead-teacher-fullname">{{fullname}}</p>
+            <div class="fac-ead-teacher-email">
+              <a class='btn btn-primary btn-small' target='_blank' href='{{messagelink}}'><span class='header-button-title'>Enviar mensagem</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    {{/teachers}}
+  {{#manyTeachers}}
+  </div>
+  {{/manyTeachers}}
+
+</div>
+{{{modules}}}
+<div class="fac-ead-labels">
+  {{#labels}}
+    <div class="fac_teachers_labels">
+      {{{profInfo}}}
+    </div>
+  {{/labels}}
+</div>
+
+
+<script>
+const acc = document.getElementById("accordion-teachers");
+  acc.addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+</script>

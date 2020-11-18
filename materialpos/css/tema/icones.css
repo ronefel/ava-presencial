@@ -1,0 +1,173 @@
+
+/* icones */
+.fiqueatento {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-fiqueatento.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}	
+.fiqueatento span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-fiqueatento-on.png) left top no-repeat;
+	display:block;
+}		
+.reflita {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-reflita.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}	
+.reflita span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-reflita-on.png) left top no-repeat;
+	display:block;
+}			
+.saibamais {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-saibamais.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+}	
+.saibamais span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-saibamais-on.png) left top no-repeat;
+	display:block;
+}			
+.pesquise {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-pesquise.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-size: contain;
+}	
+.pesquise span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-pesquise-on.png) left top no-repeat;
+	display:block;
+	background-size: contain;
+}
+
+
+.glossario {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-glossario.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-size: contain;
+}	
+.glossario span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-glossario-on.png) left top no-repeat;
+	display:block;
+	background-size: contain;
+}
+
+
+.indicacao-de-leitura {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-indicacao-de-leitura.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-size: contain;
+}	
+.indicacao-de-leitura span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-indicacao-de-leitura-on.png) left top no-repeat;
+	display:block;
+	background-size: contain;
+}
+.midias {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-indicacao-de-leitura.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-size: contain;
+}	
+.midias span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-indicacao-de-leitura-on.png) left top no-repeat;
+	display:block;
+	background-size: contain;
+}
+
+.resolucao-problema {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-resolucao-problema.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-size: contain;
+}	
+.resolucao-problema span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-resolucao-problema-on.png) left top no-repeat;
+	display:block;
+	background-size: contain;
+}
+
+.tomenota {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-tomenota.png) left top no-repeat;
+	background-size: 223px 73px;
+	display:block;	
+	cursor: pointer;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom:20px;
+	background-size: contain;
+}	
+.tomenota span.hover {
+	width:223px;
+	height:73px;
+	background:url(../../img/bt-tomenota-on.png) left top no-repeat;
+	display:block;
+	background-size: contain;
+}

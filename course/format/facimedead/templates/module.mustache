@@ -1,0 +1,21 @@
+<ul class="fac-ead-modules-container">
+    {{#modules}}
+        <li class="fac-ead-module">
+            <a 
+                {{#resource}}
+                    onclick='window.open("/mod/{{mod.modname}}/view.php?id={{mod.id}}&redirect=1"); return false;'
+                {{/resource}}
+                href="/mod/{{mod.modname}}/view.php?id={{mod.id}}">
+                <div class="fac-ead-module-icon">
+                    <img src="{{iconLink}}" alt="{{icon}}">
+                </div>
+                <p class="fac-ead-module-title">{{mod.name}}</p>
+            </a>
+        </li>
+    {{/modules}}
+    {{#rotulos}}
+        <li>
+            <p>{{texto}}</p>
+        </li>
+    {{/rotulos}}
+</ul>

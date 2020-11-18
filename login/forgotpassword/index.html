@@ -1,0 +1,73 @@
+<html>
+
+<head>
+  <title>Portal do Aluno</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8">
+  <meta name="description" content="TOTVS Portal - TOTVS Educacional">
+  <meta name="keywords" content="totvs">
+  <meta name="author" content="totvs">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/animacao.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+  <style>
+    @media (max-width: 767px) {
+      #toast-container>div {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app" class="container">
+    <div class="logo animated fadeInDown">
+      <img src="assets/img/logo-responsivo.png" alt="marca">
+    </div>
+    <div class="login-box animated fadeInDown">
+      <div class="box-header">
+        <h1>Portal do Aluno</h1>
+      </div>
+      <div class="box-title">
+        <h2>Esqueceu sua senha?</h2>
+      </div>
+      <form class="form login" @submit.prevent="submit()">
+        <div class="form__field">
+          <label for="User">
+            <object data="assets/img/user.svg" width="26px" height="26px" type="image/svg+xml"><img
+                src="assets/img/user.png" alt="user.svg"></object>
+            <span class="hidden ">Usuário</span>
+          </label>
+          <input id="User" v-model="User" type="text" tabindex="1" name="User" class="form__input" placeholder="Usuário"
+            required="">
+        </div>
+
+        <div class="form__field">
+          <label for="Email">
+            <object data="assets/img/email.svg" width="26px" height="26px" type="image/svg+xml"><img
+                src="assets/img/email.png" alt="email.svg"></object>
+            <span class="hidden ">E-mail</span>
+          </label>
+          <input id="Email" v-model="Email" type="email" tabindex="1" name="Email" class="form__input"
+            placeholder="E-mail" required="">
+        </div>
+        <div class="form__field">
+          <input type="submit" tabindex="4" value="Enviar">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
